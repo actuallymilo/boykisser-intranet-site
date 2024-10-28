@@ -12,8 +12,13 @@ cp /speedtest/*.js /var/www/html/
 # Copy favicon
 cp /speedtest/favicon.ico /var/www/html/
 
+# Set custom webroot on alpine
+if [ -f /etc/alpine-release ]; then
+  sed -i "s#\"/var/www/localhost/htdocs\"#\"/var/www/html\"#g" /etc/apache2/httpd.conf
+fi
+
 # Set up backend side for standlone modes
-if [ "$MODE" == "standalone" ]; then
+if [[ "$MODE" == "standalone" || "$MODE" == "dual" ]]; then
   cp -r /speedtest/backend/ /var/www/html/backend
   if [ ! -z "$IPINFO_APIKEY" ]; then
     sed -i s/\$IPINFO_APIKEY\ =\ \'\'/\$IPINFO_APIKEY\ =\ \'$IPINFO_APIKEY\'/g /var/www/html/backend/getIP_ipInfo_apikey.php
@@ -27,15 +32,13 @@ if [ "$MODE" == "backend" ]; then
   fi
 fi
 
-# Set up index.php for frontend-only or standalone modes
-if [ "$MODE" == "frontend" ]; then
-  cp /speedtest/frontend.php /var/www/html/index.php
-elif [ "$MODE" == "standalone" ]; then
-  cp /speedtest/standalone.php /var/www/html/index.php
+# Set up unified index.php
+if [ "$MODE" != "backend" ]; then
+  cp /speedtest/ui.php /var/www/html/index.php
 fi
 
 # Apply Telemetry settings when running in standalone or frontend mode and telemetry is enabled
-if [[ "$TELEMETRY" == "true" && ( "$MODE" == "frontend" || "$MODE" == "standalone" ) ]]; then
+if [[ "$TELEMETRY" == "true" && ( "$MODE" == "frontend" || "$MODE" == "standalone" || "$MODE" == "dual" ) ]]; then
   cp -r /speedtest/results /var/www/html/results
 
   if [ "$MODE" == "frontend" ]; then
@@ -81,11 +84,19 @@ chown -R www-data /var/www/html/*
 
 # Allow selection of Apache port for network_mode: host
 if [ "$WEBPORT" != "80" ]; then
-  sed -i "s/^Listen 80\$/Listen $WEBPORT/g" /etc/apache2/ports.conf
-  sed -i "s/*:80>/*:$WEBPORT>/g" /etc/apache2/sites-available/000-default.conf
+  if [ -f /etc/alpine-release ]; then
+    sed -i "s/^Listen 80\$/Listen $WEBPORT/g" /etc/apache2/httpd.conf
+  else
+    sed -i "s/^Listen 80\$/Listen $WEBPORT/g" /etc/apache2/ports.conf
+    sed -i "s/*:80>/*:$WEBPORT>/g" /etc/apache2/sites-available/000-default.conf
+  fi
 fi
 
 echo "Done, Starting APACHE"
 
 # This runs apache
-apache2-foreground
+if [ -f /etc/alpine-release ]; then
+  exec httpd -DFOREGROUND
+else
+  exec apache2-foreground
+fi
