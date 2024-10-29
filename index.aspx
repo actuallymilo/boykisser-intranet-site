@@ -14,17 +14,17 @@
 
     <div class="cell">
         <h3>Email</h3>
-        <p>Need help configuring your email client? Find the IMAP/SMTP settings here: <a href="email.html">Email Settings</a></p>
+        <p>Need help configuring your email client? Find the IMAP/SMTP settings here: <a href="email.aspx">Email Settings</a></p>
     </div>
 
     <div class="cell">
         <h3>Instant Messaging</h3>
-        <p>Need help configuring Pidgin to use our IM services? Find the Pidgin connection settings here: <a href="im.html">IM Settings</a></p>
+        <p>Need help configuring Pidgin to use our IM services? Find the Pidgin connection settings here: <a href="im.aspx">IM Settings</a></p>
     </div>
 
     <div class="cell">
         <h3>Telephone Services</h3>
-        <p>Need help configuring your softphone? Find the SIP settings here: <a href="sip.html">SIP Settings</a></p>
+        <p>Need help configuring your softphone? Find the SIP settings here: <a href="sip.aspx">SIP Settings</a></p>
     </div>
 
     <div class="cell">
