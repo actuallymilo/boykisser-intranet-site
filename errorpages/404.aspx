@@ -7,10 +7,8 @@
     <link rel="icon" href="/favicon.ico?" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
     <h1>Server Error</h1>
-
     <div class="cell">
         <h3 style="color: red; font-weight: bold;">404 - File or directory not found.</h3>
         <p>The resource you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>

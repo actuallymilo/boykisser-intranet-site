@@ -7,7 +7,6 @@
     <link rel="icon" href="/favicon.ico?" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <h1>PBX Telephone Numbers</h1>
     <p>Here are some telephone numbers used to access various services on our PBX:</p>

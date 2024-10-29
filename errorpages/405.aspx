@@ -7,10 +7,8 @@
     <link rel="icon" href="/favicon.ico?" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
     <h1>Server Error</h1>
-
     <div class="cell">
         <h3 style="color: red; font-weight: bold;">405 - HTTP verb used to access this page is not allowed.</h3>
         <p>The page you are looking for cannot be displayed because an invalid method (HTTP verb) was used to attempt access.</p>

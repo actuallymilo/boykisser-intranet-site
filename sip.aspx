@@ -7,11 +7,9 @@
     <link rel="icon" href="/favicon.ico?" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <h1>SIP Settings</h1>
     <p>Here are the settings you need to connect your softphone to our PBX:</p>
-
     <div class="cell">
         <h3>Account Settings</h3>
         <ul>

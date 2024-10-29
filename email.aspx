@@ -7,11 +7,9 @@
     <link rel="icon" href="/favicon.ico?" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <h1>Email Client Settings</h1>
     <p>Here are the settings you need to configure your email client if you're running Outlook 2007 or earlier, using iOS or macOS, or if Outlook is unable to automatically find your settings:</p>
-
     <div class="cell">
         <h3>IMAP Settings</h3>
         <ul>

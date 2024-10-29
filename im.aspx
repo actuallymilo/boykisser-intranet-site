@@ -7,7 +7,6 @@
     <link rel="icon" href="/favicon.ico?" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <h1>IM Client Settings</h1>
     <p>Here are the settings you need to configure your Pidgin IM client:</p>
@@ -37,6 +36,5 @@
         <h3>SSL Certificate Verification</h3>
         <p>If you receive a dialog box that asks you to accept the certificate for boykisser.com, select "accept."</p>
     </div>
-
-  </body>
+</body>
 </html>
