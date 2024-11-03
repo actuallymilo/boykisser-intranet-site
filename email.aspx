@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Email Client Settings</h1>
-    <p>Here are the settings you need to configure your email client if you're running Outlook 2007 or earlier, using iOS or macOS, or if Outlook is unable to automatically find your settings:</p>
+    <p>Here are the settings you need to configure your email client if you're running Outlook 2003 or earlier, using iOS or macOS, or if Outlook is unable to automatically find your settings:</p>
     <div class="cell">
         <h3>IMAP Settings</h3>
         <ul>
