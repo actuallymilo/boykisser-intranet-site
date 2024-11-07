@@ -31,7 +31,7 @@
             <li><a href="https://forums.boykisser.com">Boykisser Forums</a></li>
             <li><a href="https://wiki.boykisser.com">Boykisser Wiki</a></li>
             <li><a href="speedtest">Speed Test</a></li>
-	    <li><a href="directory.aspx">PBX Services</a></li>
+	    <li><a href="directory.aspx">Telephone Directory</a></li>
         </ul>
     </div>
 
