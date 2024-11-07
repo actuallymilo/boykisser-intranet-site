@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boykisser Intranet Services</title>
+    <title>Boykisser Corporation</title>
     <link rel="icon" href="/favicon.ico?" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Welcome to the Boykisser Intranet!</h1>
+    <h1>Welcome to the Boykisser Corporation network.</h1>
     <p>Here you'll find links to various services provided by Boykisser Corporation.</p>
     <div class="cell">
         <h3>Email</h3>
@@ -49,6 +49,6 @@
     	<p>Boykisser System Administrator: <a href="mailto:administrator@boykisser.com">administrator@boykisser.com</a></p>
     	<p>Network Operations Center: <a href="mailto:noc@boykisser.com">noc@boykisser.com</a></p>
     </div>
-    <footer> <small>Copyright &copy; 2024 Boykisser Corporation. All Rights Reserved</small> </footer>
+    <footer> <small>Copyright &copy; 2023-2024 Boykisser Corporation. All Rights Reserved</small> </footer>
 </body>
 </html>
