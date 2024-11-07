@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boykisser PBX Numbers</title>
+    <title>Boykisser Directory</title>
     <link rel="icon" href="/favicon.ico?" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>PBX Telephone Numbers</h1>
-    <p>Here are some telephone numbers used to access various services on our PBX:</p>
+    <h1>Telephone Numbers</h1>
+    <p>The numbers listed below provide quick access to essential phone numbers and various phone features.</p>
     <div class="cell">
         <ul>
             <li style="color: red; font-weight: bold;">Emergency Services: 911</li>
