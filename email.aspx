@@ -30,10 +30,10 @@
             <li>Username/password: use the same credentials as IMAP </li>
         </ul>
     </div>
+    <footer>
+        <a href="/" class="footer-link">Back to home</a>
+        </footer>
 </body>
-<footer>
-<a href="/" class="footer-link">Back to home</a>
-</footer>
 <script>
     function applyDarkModeFromCookie() {
         var match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
