@@ -36,10 +36,18 @@
 </footer>
 <script>
     function applyDarkModeFromCookie() {
-        const match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
-        const isDark = match ? (match[2] === 'true') : false;
-            document.body.classList.toggle('dark-mode', isDark);
+        var match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
+        var isDark = match ? match[2] === 'true' : false;
+
+        if (isDark) {
+            document.body.classList.add('dark-mode');
+        } else {
+            document.body.classList.remove('dark-mode');
         }
-    applyDarkModeFromCookie();
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        applyDarkModeFromCookie();
+    });
 </script>
 </html>
