@@ -14,4 +14,12 @@
         <p>There is a problem with the page you are looking for, and it cannot be displayed. When the Web server (while acting as a gateway or proxy) contacted the upstream content server, it received an invalid response from the content server.</p>
     </div>
 </body>
+<script>
+    function applyDarkModeFromCookie() {
+        const match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
+        const isDark = match ? (match[2] === 'true') : false;
+            document.body.classList.toggle('dark-mode', isDark);
+        }
+    applyDarkModeFromCookie();
+</script>
 </html>

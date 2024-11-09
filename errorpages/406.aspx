@@ -14,4 +14,12 @@
         <p>The page you are looking for cannot be opened by your browser because it has a file name extension that your browser does not accept.</p>
     </div>
 </body>
+<script>
+    function applyDarkModeFromCookie() {
+        const match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
+        const isDark = match ? (match[2] === 'true') : false;
+            document.body.classList.toggle('dark-mode', isDark);
+        }
+    applyDarkModeFromCookie();
+</script>
 </html>

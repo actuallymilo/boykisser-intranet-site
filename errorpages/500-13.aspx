@@ -14,4 +14,12 @@
         <p>The request cannot be processed at this time. The amount of traffic exceeds the Web site's configured capacity.</p>
     </div>
 </body>
+<script>
+    function applyDarkModeFromCookie() {
+        const match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
+        const isDark = match ? (match[2] === 'true') : false;
+            document.body.classList.toggle('dark-mode', isDark);
+        }
+    applyDarkModeFromCookie();
+</script>
 </html>

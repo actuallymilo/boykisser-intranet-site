@@ -14,4 +14,12 @@
         <p>The URL you attempted to reach has an ISAPI or CGI application installed that verifies user credentials before proceeding. This application cannot verify your credentials.</p>
     </div>
 </body>
+<script>
+    function applyDarkModeFromCookie() {
+        const match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
+        const isDark = match ? (match[2] === 'true') : false;
+            document.body.classList.toggle('dark-mode', isDark);
+        }
+    applyDarkModeFromCookie();
+</script>
 </html>

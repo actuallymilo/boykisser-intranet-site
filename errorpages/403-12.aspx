@@ -14,4 +14,12 @@
         <p>The account to which your client certificate is mapped on the Web server has been denied access to this Web site. A Secure Sockets Layer (SSL) client certificate is used for identifying you as a valid user of the resource.</p>
     </div>
 </body>
+<script>
+    function applyDarkModeFromCookie() {
+        const match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
+        const isDark = match ? (match[2] === 'true') : false;
+            document.body.classList.toggle('dark-mode', isDark);
+        }
+    applyDarkModeFromCookie();
+</script>
 </html>

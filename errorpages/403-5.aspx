@@ -14,4 +14,12 @@
         <p>The resource you are trying to access is secured with a 128-bit version of Secure Sockets Layer (SSL). In order to view this resource, you need a browser that supports this version of SSL.</p>
     </div>
 </body>
+<script>
+    function applyDarkModeFromCookie() {
+        const match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
+        const isDark = match ? (match[2] === 'true') : false;
+            document.body.classList.toggle('dark-mode', isDark);
+        }
+    applyDarkModeFromCookie();
+</script>
 </html>

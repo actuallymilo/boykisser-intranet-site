@@ -14,4 +14,12 @@
         <p>There is a problem with the page you are looking for and it cannot be displayed. This error can occur if you are trying to display an HTML page that resides in a directory that is configured to allow Execute or Script permissions only.</p>
     </div>
 </body>
+<script>
+    function applyDarkModeFromCookie() {
+        const match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
+        const isDark = match ? (match[2] === 'true') : false;
+            document.body.classList.toggle('dark-mode', isDark);
+        }
+    applyDarkModeFromCookie();
+</script>
 </html>

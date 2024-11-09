@@ -16,13 +16,24 @@
             <li>Customer Service: 611</li>
             <li>Operator Assistance: 0</li>
             <li>Directory Assistance: *411</li>
-	    <li>Voicemail: *97</li>
-	    <li>Enable DND: *78</li>
-	    <li>Disable DND: *79</li>
-	    <li>Date & Time: *9172</li>
-	    <li>Call Return: *69</li>
-	    <li>Redial: *870</li>
+	        <li>Voicemail: *97</li>
+	        <li>Enable DND: *78</li>
+	        <li>Disable DND: *79</li>
+	        <li>Date & Time: *9172</li>
+	        <li>Call Return: *69</li>
+	        <li>Redial: *870</li>
         </ul>
     </div>
 </body>
+<footer>
+<a href="/" class="footer-link">Back to home</a>
+</footer>
+<script>
+    function applyDarkModeFromCookie() {
+        const match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
+        const isDark = match ? (match[2] === 'true') : false;
+            document.body.classList.toggle('dark-mode', isDark);
+        }
+    applyDarkModeFromCookie();
+</script>
 </html>

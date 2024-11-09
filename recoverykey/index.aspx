@@ -17,4 +17,15 @@
 	<p>You will need to contact technical support by calling <a href="tel:611">611</a> or by sending an e-mail to <a href="mailto:support@boykisser.com">support@boykisser.com</a>. You'll need to provide the first eight digits of the recovery key ID, and support will be able to provide the recovery key you'll need to unlock your PC.</p>
     </div>
 </body>
+<footer>
+<a href="/" class="footer-link">Back to home</a>
+</footer>
+<script>
+    function applyDarkModeFromCookie() {
+        const match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
+        const isDark = match ? (match[2] === 'true') : false;
+            document.body.classList.toggle('dark-mode', isDark);
+        }
+    applyDarkModeFromCookie();
+</script>
 </html>

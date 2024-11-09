@@ -14,4 +14,12 @@
         <p>There is a problem saving the page to the Web site. This error can occur if you attempt to upload a file or modify a file in a directory that does not allow Write access.</p>
     </div>
 </body>
+<script>
+    function applyDarkModeFromCookie() {
+        const match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
+        const isDark = match ? (match[2] === 'true') : false;
+            document.body.classList.toggle('dark-mode', isDark);
+        }
+    applyDarkModeFromCookie();
+</script>
 </html>

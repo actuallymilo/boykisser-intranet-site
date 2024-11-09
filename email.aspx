@@ -31,4 +31,15 @@
         </ul>
     </div>
 </body>
+<footer>
+<a href="/" class="footer-link">Back to home</a>
+</footer>
+<script>
+    function applyDarkModeFromCookie() {
+        const match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
+        const isDark = match ? (match[2] === 'true') : false;
+            document.body.classList.toggle('dark-mode', isDark);
+        }
+    applyDarkModeFromCookie();
+</script>
 </html>

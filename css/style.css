@@ -6,6 +6,11 @@ body {
     color: #000000;
 }
 
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
 .cell {
     margin-bottom: 20px;
     padding: 10px 20px;
@@ -13,8 +18,9 @@ body {
     border-radius: 5px;
 }
 
-.cell h3 {
-    margin-bottom: 5px;
+body.dark-mode .cell {
+    border: 1px solid #444;
+    background-color: #1e1e1e;
 }
 
 .cell a {
@@ -22,18 +28,30 @@ body {
     color: #007bff;
 }
 
-@media (prefers-color-scheme: dark) {
-	body {
-		background-color: #121212;
-		color: #ffffff;
-	}
-	
-	.cell {
-		border: 1px solid #444;
-		background-color: #1e1e1e;
-	}
-	
-	.cell a {
-		color: #66aaff;
-	}
+body.dark-mode .cell a {
+    color: #66aaff;
+}
+
+#dark-mode-toggle {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+}
+
+body.dark-mode #dark-mode-toggle {
+    background-color: #444;
+    color: #ddd;
+}
+
+.footer-link {
+  font-size: 0.8em;
+  color: #666;
+  text-decoration: none;
+}
+
+body.dark-mode .footer-link {
+  color: #aaa;
 }

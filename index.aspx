@@ -6,6 +6,7 @@
     <title>Boykisser Corporation</title>
     <link rel="icon" href="/favicon.ico?" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/setdarkmode.js"></script>
 </head>
 <body>
     <h1>Welcome to the Boykisser Corporation network.</h1>
@@ -31,7 +32,7 @@
             <li><a href="https://forums.boykisser.com">Boykisser Forums</a></li>
             <li><a href="https://wiki.boykisser.com">Boykisser Wiki</a></li>
             <li><a href="speedtest">Speed Test</a></li>
-	    <li><a href="directory.aspx">Telephone Directory</a></li>
+	        <li><a href="directory.aspx">Telephone Directory</a></li>
         </ul>
     </div>
 
@@ -49,6 +50,9 @@
     	<p>Boykisser System Administrator: <a href="mailto:administrator@boykisser.com">administrator@boykisser.com</a></p>
     	<p>Network Operations Center: <a href="mailto:noc@boykisser.com">noc@boykisser.com</a></p>
     </div>
-    <footer> <small>Copyright &copy; 2023-2024 Boykisser Corporation. All Rights Reserved</small> </footer>
+    <footer>
+    <small>Copyright &copy; 2023-2024 Boykisser Corporation. All Rights Reserved</small>
+    <button id="dark-mode-toggle" style="margin-left: 20px;">Toggle Dark Mode</button>
+    </footer>   
 </body>
 </html>

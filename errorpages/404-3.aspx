@@ -14,4 +14,12 @@
         <p>The page you are requesting cannot be served due to the Multipurpose Internet Mail Extensions (MIME) map policy that is configured on the Web server. The page you requested has a file name extension that is not recognised, and is therefore not allowed.</p>
     </div>
 </body>
+<script>
+    function applyDarkModeFromCookie() {
+        const match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
+        const isDark = match ? (match[2] === 'true') : false;
+            document.body.classList.toggle('dark-mode', isDark);
+        }
+    applyDarkModeFromCookie();
+</script>
 </html>

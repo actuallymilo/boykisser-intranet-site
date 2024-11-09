@@ -14,4 +14,12 @@
         <p>You might not have permission to view this directory or page using the credentials that you supplied. The Web server has a filter installed to verify users connecting to the server and it failed to authenticate your credentials.</p>
     </div>
 </body>
+<script>
+    function applyDarkModeFromCookie() {
+        const match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
+        const isDark = match ? (match[2] === 'true') : false;
+            document.body.classList.toggle('dark-mode', isDark);
+        }
+    applyDarkModeFromCookie();
+</script>
 </html>
