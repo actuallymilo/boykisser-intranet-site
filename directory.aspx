@@ -16,12 +16,12 @@
             <li>Customer Service: 611</li>
             <li>Operator Assistance: 0</li>
             <li>Directory Assistance: *411</li>
-	        <li>Voicemail: *97</li>
-	        <li>Enable DND: *78</li>
-	        <li>Disable DND: *79</li>
-	        <li>Date & Time: *9172</li>
-	        <li>Call Return: *69</li>
-	        <li>Redial: *870</li>
+	    <li>Voicemail: *97</li>
+            <li>Enable DND: *78</li>
+	    <li>Disable DND: *79</li>
+	    <li>Date & Time: *9172</li>
+	    <li>Call Return: *69</li>
+	    <li>Redial: *870</li>
         </ul>
     </div>
 </body>
