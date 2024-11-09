@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <script src="js/fetchcookie.js"></script>
     <h1>Email Client Settings</h1>
     <p>Here are the settings you need to configure your email client if you're running Outlook 2003 or earlier, using iOS or macOS, or if Outlook is unable to automatically find your settings:</p>
     <div class="cell">
@@ -32,20 +33,6 @@
     </div>
     <footer>
         <a href="/" class="footer-link">Back to home</a>
-        </footer>
+    </footer>
 </body>
-<script>
-    function applyDarkModeFromCookie() {
-        var match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
-        var isDark = match ? match[2] === 'true' : false;
-        if (isDark) {
-            document.body.classList.add('dark-mode');
-        } else {
-            document.body.classList.remove('dark-mode');
-        }
-    }
-    document.addEventListener('DOMContentLoaded', function() {
-        applyDarkModeFromCookie();
-    });
-</script>
 </html>

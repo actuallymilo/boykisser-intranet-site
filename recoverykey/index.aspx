@@ -7,8 +7,8 @@
     <link rel="icon" href="/favicon.ico?" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<script src="../js/fetchcookie.js"></script>
 <body>
+    <script src="../js/fetchcookie.js"></script>
     <h1>Find your BitLocker Recovery Key</h1>
     <p>You're seeing this page because your PC is asking for a BitLocker recovery key.</p>
     <div class="cell">
@@ -19,6 +19,6 @@
     </div>
     <footer>
         <a href="/" class="footer-link">Back to home</a>
-        </footer>
+    </footer>
 </body>
 </html>

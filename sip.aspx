@@ -21,7 +21,7 @@
         </ul>
     </div>
     <footer>
-    <a href="/" class="footer-link">Back to home</a>
+        <a href="/" class="footer-link">Back to home</a>
     </footer>
 </body>
 </html>

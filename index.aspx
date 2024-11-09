@@ -51,8 +51,8 @@
     	<p>Network Operations Center: <a href="mailto:noc@boykisser.com">noc@boykisser.com</a></p>
     </div>
     <footer>
-    <small>Copyright &copy; 2023-2024 Boykisser Corporation. All Rights Reserved</small>
-    <button id="dark-mode-toggle" style="margin-left: 20px;">Toggle Dark Mode</button>
+        <small>Copyright &copy; 2023-2024 Boykisser Corporation. All Rights Reserved</small>
+        <button id="dark-mode-toggle" style="margin-left: 20px;">Toggle Dark Mode</button>
     </footer>   
 </body>
 </html>

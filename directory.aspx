@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <script src="js/fetchcookie.js"></script>
     <h1>Telephone Numbers</h1>
     <p>The numbers listed below provide quick access to essential phone numbers and various phone features.</p>
     <div class="cell">
@@ -26,6 +27,6 @@
     </div>
     <footer>
         <a href="/" class="footer-link">Back to home</a>
-        </footer>
+    </footer>
 </body>
 </html>

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <script src="js/fetchcookie.js"></script>
     <h1>IM Client Settings</h1>
     <p>Here are the settings you need to configure your Pidgin IM client:</p>
 
@@ -26,7 +27,7 @@
         <p>If you receive a dialog box that asks you to accept the certificate for boykisser.com, select "accept."</p>
     </div>
     <footer>
-    <a href="/" class="footer-link">Back to home</a>
+        <a href="/" class="footer-link">Back to home</a>
     </footer>
 </body>
 </html>
