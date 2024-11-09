@@ -15,7 +15,7 @@
         <h3>Login Options</h3>
         <ul>
             <li>Protocol: XMPP</li>
-            <li>Username: username you specified when creating your account</li>
+            <li>Username: Active Directory username</li>
             <li>Domain: boykisser.com</li>
             <li>Resource: any unique string of text that identifies your client</li>
         </ul>
