@@ -8,24 +8,11 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <script src="../js/fetchcookie.js"></script>
     <h1>Server Error</h1>
     <div class="cell">
         <h3 style="color: red; font-weight: bold;">405 - HTTP verb used to access this page is not allowed.</h3>
         <p>The page you are looking for cannot be displayed because an invalid method (HTTP verb) was used to attempt access.</p>
     </div>
 </body>
-<script>
-    function applyDarkModeFromCookie() {
-        var match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
-        var isDark = match ? match[2] === 'true' : false;
-        if (isDark) {
-            document.body.classList.add('dark-mode');
-        } else {
-            document.body.classList.remove('dark-mode');
-        }
-    }
-    document.addEventListener('DOMContentLoaded', function() {
-        applyDarkModeFromCookie();
-    });
-</script>
 </html>

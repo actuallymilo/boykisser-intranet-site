@@ -8,24 +8,11 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <script src="../js/fetchcookie.js"></script>
     <h1>Server Error</h1>
     <div class="cell">
         <h3 style="color: red; font-weight: bold;">403.3 - Forbidden: Write access is denied.</h3>
         <p>There is a problem saving the page to the Web site. This error can occur if you attempt to upload a file or modify a file in a directory that does not allow Write access.</p>
     </div>
 </body>
-<script>
-    function applyDarkModeFromCookie() {
-        var match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
-        var isDark = match ? match[2] === 'true' : false;
-        if (isDark) {
-            document.body.classList.add('dark-mode');
-        } else {
-            document.body.classList.remove('dark-mode');
-        }
-    }
-    document.addEventListener('DOMContentLoaded', function() {
-        applyDarkModeFromCookie();
-    });
-</script>
 </html>

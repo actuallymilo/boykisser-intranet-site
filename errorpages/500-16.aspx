@@ -8,24 +8,11 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <script src="../js/fetchcookie.js"></script>
     <h1>Server Error</h1>
     <div class="cell">
         <h3 style="color: red; font-weight: bold;">500.16 - Server error: UNC authorization credentials incorrect.</h3>
         <p>The page you are requesting cannot be accessed due to UNC authorization settings that are configured incorrectly on the Web server.</p>
     </div>
 </body>
-<script>
-    function applyDarkModeFromCookie() {
-        var match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
-        var isDark = match ? match[2] === 'true' : false;
-        if (isDark) {
-            document.body.classList.add('dark-mode');
-        } else {
-            document.body.classList.remove('dark-mode');
-        }
-    }
-    document.addEventListener('DOMContentLoaded', function() {
-        applyDarkModeFromCookie();
-    });
-</script>
 </html>
