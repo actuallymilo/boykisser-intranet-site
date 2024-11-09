@@ -22,17 +22,6 @@
     </div>
 
     <div class="cell">
-        <h3>New Account Creation</h3>
-        <ul>
-            <li>Protocol: XMPP</li>
-            <li>Username: preferably your Active Directory username; however, it can be anything unique.</li>
-            <li>Domain: boykisser.com</li>
-            <li>Resource: any unique string of text</li>
-            <li>Check "create this new account on the server." It will tell the server to create the account with the settings you chose.</li>
-        </ul>
-    </div>
-
-    <div class="cell">
         <h3>SSL Certificate Verification</h3>
         <p>If you receive a dialog box that asks you to accept the certificate for boykisser.com, select "accept."</p>
     </div>
