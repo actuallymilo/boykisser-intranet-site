@@ -8,24 +8,11 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <script src="../js/fetchcookie.js"></script>
     <h1>Server Error</h1>
     <div class="cell">
         <h3 style="color: red; font-weight: bold;">404.4 - File or directory not found: No module handler is registered to handle the request.</h3>
         <p>The resource you are looking for does not have a module or handler associated with it. It cannot be handled and served.</p>
     </div>
 </body>
-<script>
-    function applyDarkModeFromCookie() {
-        var match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
-        var isDark = match ? match[2] === 'true' : false;
-        if (isDark) {
-            document.body.classList.add('dark-mode');
-        } else {
-            document.body.classList.remove('dark-mode');
-        }
-    }
-    document.addEventListener('DOMContentLoaded', function() {
-        applyDarkModeFromCookie();
-    });
-</script>
 </html>

@@ -8,24 +8,11 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <script src="../js/fetchcookie.js"></script>
     <h1>Server Error</h1>
     <div class="cell">
         <h3 style="color: red; font-weight: bold;">403.7 - Forbidden: SSL client certificate is required.</h3>
         <p>The page you are attempting to access requires your browser to have a Secure Sockets Layer (SSL) client certificate that the Web server will recognize. The client certificate is used for identifying you as a valid user of the resource.</p>
     </div>
 </body>
-<script>
-    function applyDarkModeFromCookie() {
-        var match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
-        var isDark = match ? match[2] === 'true' : false;
-        if (isDark) {
-            document.body.classList.add('dark-mode');
-        } else {
-            document.body.classList.remove('dark-mode');
-        }
-    }
-    document.addEventListener('DOMContentLoaded', function() {
-        applyDarkModeFromCookie();
-    });
-</script>
 </html>

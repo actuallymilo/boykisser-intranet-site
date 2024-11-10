@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <script src="../js/fetchcookie.js"></script>
     <h1>Find your BitLocker Recovery Key</h1>
     <p>You're seeing this page because your PC is asking for a BitLocker recovery key.</p>
     <div class="cell">
@@ -16,22 +17,8 @@
 	<h3>How do I get my BitLocker recovery key?</h3>
 	<p>You will need to contact technical support by calling <a href="tel:611">611</a> or by sending an e-mail to <a href="mailto:support@boykisser.com">support@boykisser.com</a>. You'll need to provide the first eight digits of the recovery key ID, and support will be able to provide the recovery key you'll need to unlock your PC.</p>
     </div>
+    <footer>
+        <a href="/" class="footer-link">Back to home</a>
+    </footer>
 </body>
-<footer>
-<a href="/" class="footer-link">Back to home</a>
-</footer>
-<script>
-    function applyDarkModeFromCookie() {
-        var match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
-        var isDark = match ? match[2] === 'true' : false;
-        if (isDark) {
-            document.body.classList.add('dark-mode');
-        } else {
-            document.body.classList.remove('dark-mode');
-        }
-    }
-    document.addEventListener('DOMContentLoaded', function() {
-        applyDarkModeFromCookie();
-    });
-</script>
 </html>

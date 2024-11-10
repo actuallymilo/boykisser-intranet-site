@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <script src="js/fetchcookie.js"></script>
     <h1>SIP Settings</h1>
     <p>Here are the settings you need to connect your softphone to our PBX:</p>
     <div class="cell">
@@ -19,22 +20,8 @@
             <li>Password: your voicemail PIN</li>
         </ul>
     </div>
+    <footer>
+        <a href="/" class="footer-link">Back to home</a>
+    </footer>
 </body>
-<footer>
-<a href="/" class="footer-link">Back to home</a>
-</footer>
-<script>
-    function applyDarkModeFromCookie() {
-        var match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
-        var isDark = match ? match[2] === 'true' : false;
-        if (isDark) {
-            document.body.classList.add('dark-mode');
-        } else {
-            document.body.classList.remove('dark-mode');
-        }
-    }
-    document.addEventListener('DOMContentLoaded', function() {
-        applyDarkModeFromCookie();
-    });
-</script>
 </html>

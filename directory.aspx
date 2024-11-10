@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <script src="js/fetchcookie.js"></script>
     <h1>Telephone Numbers</h1>
     <p>The numbers listed below provide quick access to essential phone numbers and various phone features.</p>
     <div class="cell">
@@ -24,22 +25,8 @@
 	    <li>Redial: *870</li>
         </ul>
     </div>
+    <footer>
+        <a href="/" class="footer-link">Back to home</a>
+    </footer>
 </body>
-<footer>
-<a href="/" class="footer-link">Back to home</a>
-</footer>
-<script>
-    function applyDarkModeFromCookie() {
-        var match = document.cookie.match(new RegExp('(^| )darkMode=([^;]+)'));
-        var isDark = match ? match[2] === 'true' : false;
-        if (isDark) {
-            document.body.classList.add('dark-mode');
-        } else {
-            document.body.classList.remove('dark-mode');
-        }
-    }
-    document.addEventListener('DOMContentLoaded', function() {
-        applyDarkModeFromCookie();
-    });
-</script>
 </html>
