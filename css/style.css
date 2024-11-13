@@ -55,3 +55,11 @@ body.dark-mode #dark-mode-toggle {
 body.dark-mode .footer-link {
   color: #aaa;
 }
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('../fonts/ProductSans.woff2') format('woff2'),
+         url('../fonts/ProductSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
