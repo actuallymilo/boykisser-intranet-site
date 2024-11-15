@@ -29,6 +29,7 @@
     <div class="cell">
         <h3>Sites</h3>
         <ul>
+            <li><a href="admcontacts.aspx">Administrative Contacts</a></li>
             <li><a href="https://forums.boykisser.com">Boykisser Forums</a></li>
             <li><a href="https://wiki.boykisser.com">Boykisser Wiki</a></li>
             <li><a href="speedtest">Speed Test</a></li>
@@ -41,15 +42,6 @@
         <p>Having technical issues? Contact the IT Helpdesk at: <a href="mailto:support@boykisser.com">support@boykisser.com</a></p>
     </div>
 
-    <div class="cell">
-    	<h3>Administrative Contacts</h3>
-    	<p>Report Abuse: <a href="mailto:abuse@boykisser.com">abuse@boykisser.com</a></p>
-    	<p>DNS Admin: <a href="mailto:hostmaster@boykisser.com">hostmaster@boykisser.com</a></p>
-    	<p>Boykisser Web Server Admin: <a href="mailto:webmaster@boykisser.com">webmaster@boykisser.com</a></p>
-    	<p>Boykisser Mail Server Admin: <a href="mailto:postmaster@boykisser.com">postmaster@boykisser.com</a></p>
-    	<p>Boykisser System Administrator: <a href="mailto:administrator@boykisser.com">administrator@boykisser.com</a></p>
-    	<p>Network Operations Center: <a href="mailto:noc@boykisser.com">noc@boykisser.com</a></p>
-    </div>
     <footer>
         <small>Copyright &copy; 2023-2024 Boykisser Corporation. All Rights Reserved</small>
         <button id="dark-mode-toggle" style="margin-left: 20px;">Toggle Dark Mode</button>
