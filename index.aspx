@@ -12,7 +12,7 @@
     <!--#include virtual="/header.aspx" -->
     <div class="content-wrapper">
         <main class="site-content">
-            <h2>Welcome to the Boykisser Corporation network.</h2>
+            <h1>Welcome to the Boykisser Corporation network.</h1>
             <p>Here you'll find links to various services provided by Boykisser Corporation.</p>
         </main>
     </div>
