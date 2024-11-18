@@ -33,11 +33,6 @@ body.dark-mode {
     margin-right: 20px;
 }
 
-.subtitle {
-    font-size: 0.9em;
-    color: #e6e6e6;
-}
-
 .navbar {
     display: -ms-flexbox;
     display: flex;
