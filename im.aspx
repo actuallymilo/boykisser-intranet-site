@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <!--#include virtual="/header.aspx" -->
     <script src="js/fetchcookie.js"></script>
+	<!--#include virtual="/header.aspx" -->
     <div class="content-wrapper">
         <main class="site-content">
             <h1>IM Client Settings</h1>
