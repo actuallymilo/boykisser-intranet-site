@@ -1,20 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administrative Contacts</title>
-    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
+﻿<%@ Page Title="Technical Contacts" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="techcontacts.aspx.cs" Inherits="Boykisser_Website.techcontacts" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
     <script src="js/fetchcookie.js"></script>
-    <!--#include virtual="/header.aspx" -->
     <div class="content-wrapper">
         <main class="site-content">
-            <h1>Administrative Contacts</h1>
+            <h1>Technical Contacts</h1>
             <p>The email addresses listed below provide points of contact for people in charge of maintaining and managing specific aspects of the network infrastructure.</p>
             <div class="cell">
                 <p>Report Abuse: <a href="mailto:abuse@boykisser.com">abuse@boykisser.com</a></p>
@@ -26,7 +15,4 @@
             </div>
         </main>
     </div>
-    <!--#include virtual="/footer.aspx" -->
-</body>
-
-</html>
+</asp:Content>

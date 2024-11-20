@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Server Error</title>
-    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-
-<body>
+﻿<%@ Page Title="Server Error" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="406.aspx.cs" Inherits="Boykisser_Website.errorpages._406" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
     <script src="../js/fetchcookie.js"></script>
-    <!--#include virtual="/header.aspx" -->
     <div class="content-wrapper">
         <main class="site-content">
             <h1>Server Error</h1>
@@ -21,7 +10,4 @@
             </div>
         </main>
     </div>
-    <!--#include virtual="/footer.aspx" -->
-</body>
-
-</html>
+</asp:Content>

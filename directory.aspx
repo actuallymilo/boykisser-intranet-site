@@ -1,19 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Boykisser Directory</title>
-	<link rel="icon" href="/favicon.ico?" type="image/x-icon">
-	<link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-	<script src="js/fetchcookie.js"></script>
-	<!--#include virtual="/header.aspx" -->
-	<div class="content-wrapper">
-		<main class="site-content">
+﻿<%@ Page Title="Boykisser Directory" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="directory.aspx.cs" Inherits="Boykisser_Website.directory" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
+    <script src="js/fetchcookie.js"></script>
+    <div class="content-wrapper">
+        <main class="site-content">
 			<h1>Telephone Numbers</h1>
 			<p>The numbers listed below provide quick access to essential phone numbers and various phone features.</p>
 			<div class="cell">
@@ -31,8 +20,5 @@
 				</ul>
 			</div>
 		</main>
-	</div>
-	<!--#include virtual="/footer.aspx" -->
-</body>
-
-</html>
+    </div>
+</asp:Content>
