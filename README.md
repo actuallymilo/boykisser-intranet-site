@@ -6,4 +6,4 @@ Dependencies:
 - PHP
 - CGI
 - URL Rewrite module (optional, used for HTTPS redirect and redirecting "www.boykisser.com" to "boykisser.com")
-- Server Side Includes IIS feature
+- ASP.NET 4.5 or newer
