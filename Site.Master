@@ -31,7 +31,7 @@
         <a href="mailto:support@boykisser.com">Contact Support</a>
     </nav>
 </header>
-    <form id="form1" runat="server">
+    <form runat="server">
     <div>
         <asp:ContentPlaceHolder ID="Content" runat="server">
         

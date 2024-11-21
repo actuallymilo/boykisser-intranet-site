@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="Boykisser Corporation" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Boykisser_Website._default" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
+<asp:Content ContentPlaceHolderID="Content" runat="server">
     <div class="content-wrapper">
         <main class="site-content">
             <h1>Welcome to the Boykisser Corporation network.</h1>

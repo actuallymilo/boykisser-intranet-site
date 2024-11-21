@@ -1,5 +1,16 @@
-﻿<%@ Page Title="Find your BitLocker Recovery Key" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Boykisser_Website.recoverykey._default" %>
-<asp:Content ContentPlaceHolderID="Content" runat="server">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find your BitLocker Recovery Key</title>
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!--#include virtual="/header.aspx" -->
     <script src="../js/fetchcookie.js"></script>
     <div class="content-wrapper">
         <main class="site-content">
@@ -17,4 +28,7 @@
             </div>
         </main>
     </div>
-</asp:Content>
+    <!--#include virtual="/footer.aspx" -->
+</body>
+
+</html>

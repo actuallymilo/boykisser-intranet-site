@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="Server Error" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="500.aspx.cs" Inherits="Boykisser_Website.errorpages._500" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
+<asp:Content ContentPlaceHolderID="Content" runat="server">
     <script src="../js/fetchcookie.js"></script>
     <div class="content-wrapper">
         <main class="site-content">

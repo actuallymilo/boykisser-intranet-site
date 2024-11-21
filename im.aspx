@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="Boykisser Instant Messaging" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="im.aspx.cs" Inherits="Boykisser_Website.im" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
+<asp:Content ContentPlaceHolderID="Content" runat="server">
     <script src="js/fetchcookie.js"></script>
     <div class="content-wrapper">
         <main class="site-content">
@@ -22,5 +22,4 @@
             </div>
         </main>
     </div>
-
 </asp:Content>
