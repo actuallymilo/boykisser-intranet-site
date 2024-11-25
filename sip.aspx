@@ -2,7 +2,7 @@
 <asp:Content ContentPlaceHolderID="Content" runat="server">
 	<script src="js/fetchcookie.js"></script>
 	<div class="content-wrapper">
-		<main class="site-content">
+		<div class="site-content">
 			<h1>SIP Settings</h1>
 			<p>Here are the settings you need to connect your softphone to our PBX:</p>
 			<div class="cell">
@@ -14,6 +14,6 @@
 					<li>Password: your voicemail PIN</li>
 				</ul>
 			</div>
-		</main>
+		</div>
 	</div>
 </asp:Content>

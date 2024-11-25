@@ -2,7 +2,7 @@
 <asp:Content ContentPlaceHolderID="Content" runat="server">
     <script src="js/fetchcookie.js"></script>
     <div class="content-wrapper">
-        <main class="site-content">
+        <div class="site-content">
 			<h1>Telephone Numbers</h1>
 			<p>The numbers listed below provide quick access to essential phone numbers and various phone features.</p>
 			<div class="cell">
@@ -19,6 +19,6 @@
 					<li>Redial: *870</li>
 				</ul>
 			</div>
-		</main>
+		</div>
     </div>
 </asp:Content>

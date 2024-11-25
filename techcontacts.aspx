@@ -2,7 +2,7 @@
 <asp:Content ContentPlaceHolderID="Content" runat="server">
     <script src="js/fetchcookie.js"></script>
     <div class="content-wrapper">
-        <main class="site-content">
+        <div class="site-content">
             <h1>Technical Contacts</h1>
             <p>The email addresses listed below provide points of contact for people in charge of maintaining and managing specific aspects of the network infrastructure.</p>
             <div class="cell">
@@ -13,6 +13,6 @@
                 <p>Boykisser System Administrator: <a href="mailto:administrator@boykisser.com">administrator@boykisser.com</a></p>
                 <p>Network Operations Center: <a href="mailto:noc@boykisser.com">noc@boykisser.com</a></p>
             </div>
-        </main>
+        </div>
     </div>
 </asp:Content>

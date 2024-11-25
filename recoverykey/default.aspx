@@ -2,7 +2,7 @@
 <asp:Content ContentPlaceHolderID="Content" runat="server">
     <script src="../js/fetchcookie.js"></script>
     <div class="content-wrapper">
-        <main class="site-content">
+        <div class="site-content">
             <h1>Find your BitLocker Recovery Key</h1>
             <p>You're seeing this page because your PC is asking for a BitLocker recovery key.</p>
             <div class="cell">
@@ -15,6 +15,6 @@
                     the first eight digits of the recovery key ID, and support will be able to provide the recovery key
                     you'll need to unlock your PC.</p>
             </div>
-        </main>
+        </div>
     </div>
 </asp:Content>

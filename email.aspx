@@ -2,7 +2,7 @@
 <asp:Content ContentPlaceHolderID="Content" runat="server">
 	<script src="js/fetchcookie.js"></script>
 	<div class="content-wrapper">
-		<main class="site-content">
+		<div class="site-content">
 			<h1>Email Client Settings</h1>
 			<p>Here are the settings you need to configure your email client if you're running Outlook 2003 or earlier, using iOS or macOS, or if Outlook is unable to automatically find your settings:</p>
 			<div class="cell">
@@ -26,6 +26,6 @@
 					<li>Username/password: use the same credentials as IMAP </li>
 				</ul>
 			</div>
-		</main>
+		</div>
 	</div>
 </asp:Content>
