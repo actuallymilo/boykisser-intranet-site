@@ -1,6 +1,5 @@
 ﻿<%@ Page Title="Boykisser Mail Services" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="email.aspx.cs" Inherits="Boykisser_Website.email" %>
 <asp:Content ContentPlaceHolderID="Content" runat="server">
-	<script src="js/fetchcookie.js"></script>
 	<div class="content-wrapper">
 		<div class="site-content">
 			<h1>Email Client Settings</h1>

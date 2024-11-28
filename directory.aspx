@@ -1,6 +1,5 @@
 ﻿<%@ Page Title="Boykisser Directory" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="directory.aspx.cs" Inherits="Boykisser_Website.directory" %>
 <asp:Content ContentPlaceHolderID="Content" runat="server">
-    <script src="js/fetchcookie.js"></script>
     <div class="content-wrapper">
         <div class="site-content">
 			<h1>Telephone Numbers</h1>

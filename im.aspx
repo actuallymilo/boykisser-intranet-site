@@ -1,6 +1,5 @@
 ﻿<%@ Page Title="Boykisser Instant Messaging" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="im.aspx.cs" Inherits="Boykisser_Website.im" %>
 <asp:Content ContentPlaceHolderID="Content" runat="server">
-    <script src="js/fetchcookie.js"></script>
     <div class="content-wrapper">
         <div class="site-content">
             <h1>IM Client Settings</h1>

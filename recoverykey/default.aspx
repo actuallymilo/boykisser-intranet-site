@@ -1,6 +1,5 @@
 ﻿<%@ Page Title="Find your BitLocker Recovery Key" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Boykisser_Website.recoverykey._default" %>
 <asp:Content ContentPlaceHolderID="Content" runat="server">
-    <script src="../js/fetchcookie.js"></script>
     <div class="content-wrapper">
         <div class="site-content">
             <h1>Find your BitLocker Recovery Key</h1>

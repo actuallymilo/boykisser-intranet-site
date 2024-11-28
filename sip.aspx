@@ -1,6 +1,5 @@
 ﻿<%@ Page Title="Boykisser SIP Services" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="sip.aspx.cs" Inherits="Boykisser_Website.sip" %>
 <asp:Content ContentPlaceHolderID="Content" runat="server">
-	<script src="js/fetchcookie.js"></script>
 	<div class="content-wrapper">
 		<div class="site-content">
 			<h1>SIP Settings</h1>
