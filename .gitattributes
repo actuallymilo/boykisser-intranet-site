@@ -1,1 +1,3 @@
 speedtest/* linguist-vendored
+speedtest/backend/* linguist-vendored
+speedtest/results/* linguist-vendored
