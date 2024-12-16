@@ -41,6 +41,13 @@ namespace Boykisser_Website
                     Text = "Logout"
                 };
                 LogoutPlaceholder.Controls.Add(logoutButton);
+
+                var adminButton = new System.Web.UI.WebControls.HyperLink
+                {
+                    NavigateUrl = "~/admin/default.aspx",
+                    Text= "Admin"
+                };
+                AdminPlaceholder.Controls.Add(adminButton);
             }
         }
         public class Settings
