@@ -53,7 +53,7 @@ namespace Boykisser_Website
                             {
                                 return;
                             }
-                            HttpContext.Current.Response.Redirect("~/errorpages/maintenance.aspx", true);
+                            HttpContext.Current.RewritePath("~/errorpages/maintenance.aspx");
                         }
 
                         if (settings.BlockedIps != null)
@@ -62,7 +62,7 @@ namespace Boykisser_Website
 
                             if (settings.BlockedIps.Contains(clientIp) && !currentPath.Contains("/errorpages/403-6.aspx"))
                             {
-                                HttpContext.Current.Response.Redirect("~/errorpages/403-6.aspx", true);
+                                HttpContext.Current.RewritePath("~/errorpages/403-6.aspx");
                             }
                         }
                     }
