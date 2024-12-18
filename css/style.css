@@ -169,12 +169,6 @@ body.dark-mode .cell a {
     box-sizing: border-box;
 }
 
-.site-content {
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0 auto;
-}
-
 .login-form {
     display: flex;
     gap: 15px;
