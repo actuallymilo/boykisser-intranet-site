@@ -87,7 +87,6 @@
     <Content Include="admin\logout.aspx" />
     <Content Include="Site.Master" />
     <Content Include="packages.config" />
-    <Content Include="App_Data\settings.json" />
     <Content Include="json\settings.json" />
     <None Include="Properties\PublishProfiles\rel.pubxml" />
     <None Include="Web.Debug.config">
