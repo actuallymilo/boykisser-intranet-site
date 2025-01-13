@@ -37,18 +37,26 @@ namespace Boykisser_Website
             {
                 var logoutButton = new System.Web.UI.WebControls.HyperLink
                 {
-                    NavigateUrl = "~/admin/logout.aspx",
+                    NavigateUrl = "~/adminarea/logout.aspx",
                     Text = "Logout"
                 };
                 LogoutPlaceholder.Controls.Add(logoutButton);
 
-                var adminButton = new System.Web.UI.WebControls.HyperLink
+                var siteAdminButton = new System.Web.UI.WebControls.HyperLink
                 {
-                    NavigateUrl = "~/admin/default.aspx",
-                    Text= "Admin"
+                    NavigateUrl = "~/adminarea/siteadmin.aspx",
+                    Text= "Site Admin"
                 };
-                AdminPlaceholder.Controls.Add(adminButton);
+                SiteAdminPlaceholder.Controls.Add(siteAdminButton);
+
+                var adminAreaButton = new System.Web.UI.WebControls.HyperLink
+                {
+                    NavigateUrl = "~/adminarea/",
+                    Text = "Admin Area"
+                };
+                SiteAdminPlaceholder.Controls.Add(adminAreaButton);
             }
+           
         }
         public class Settings
         {

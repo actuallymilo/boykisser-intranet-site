@@ -31,7 +31,8 @@
             <a href="/im.aspx">IM Setup</a>
             <a href="/sip.aspx">SIP Setup</a>
             <a href="mailto:support@boykisser.com">Contact Support</a>
-            <asp:PlaceHolder ID="AdminPlaceholder" runat="server"></asp:placeholder>
+            <asp:Placeholder ID="SiteAdminPlaceholder" runat="server"></asp:Placeholder>
+            <asp:PlaceHolder ID="AdminArea" runat="server"></asp:PlaceHolder>
             <asp:PlaceHolder ID="LogoutPlaceholder" runat="server"></asp:PlaceHolder>
         </nav>
     </header>

@@ -13,12 +13,15 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Boykisser_Website</RootNamespace>
     <AssemblyName>Boykisser Website</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,6 +45,7 @@
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.DirectoryServices.AccountManagement" />
     <Reference Include="System.Net.Http" />
@@ -55,8 +59,6 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Http, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -67,24 +69,28 @@
       <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.0.0\lib\net45\System.Web.Http.WebHost.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="admin\default.aspx" />
+    <Content Include="adminarea\default.aspx" />
+    <Content Include="adminarea\domainjoin.aspx" />
+    <Content Include="adminarea\fileshares.aspx" />
+    <Content Include="adminarea\grouppolicy.aspx" />
+    <Content Include="adminarea\siteadmin.aspx" />
     <Content Include="css\style.css" />
     <Content Include="errorpages\403-6.aspx" />
     <Content Include="errorpages\maintenance.aspx" />
     <Content Include="Global.asax" />
     <Content Include="js\dropdown.js" />
     <Content Include="js\setdarkmode.js" />
-    <Content Include="admin\login.aspx" />
-    <Content Include="admin\logout.aspx" />
+    <Content Include="adminarea\login.aspx" />
+    <Content Include="adminarea\logout.aspx" />
     <Content Include="Site.Master" />
     <Content Include="packages.config" />
     <Content Include="json\settings.json" />
@@ -116,12 +122,40 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="admin\default.aspx.cs">
+    <Compile Include="adminarea\default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\default.aspx.designer.cs">
+    <Compile Include="adminarea\default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminarea\domainjoin.aspx.cs">
+      <DependentUpon>domainjoin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminarea\domainjoin.aspx.designer.cs">
+      <DependentUpon>domainjoin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminarea\fileshares.aspx.cs">
+      <DependentUpon>fileshares.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminarea\fileshares.aspx.designer.cs">
+      <DependentUpon>fileshares.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminarea\grouppolicy.aspx.cs">
+      <DependentUpon>grouppolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminarea\grouppolicy.aspx.designer.cs">
+      <DependentUpon>grouppolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminarea\siteadmin.aspx.cs">
+      <DependentUpon>siteadmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminarea\siteadmin.aspx.designer.cs">
+      <DependentUpon>siteadmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
@@ -231,18 +265,18 @@
     <Compile Include="im.aspx.designer.cs">
       <DependentUpon>im.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\login.aspx.cs">
+    <Compile Include="adminarea\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\login.aspx.designer.cs">
+    <Compile Include="adminarea\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\logout.aspx.cs">
+    <Compile Include="adminarea\logout.aspx.cs">
       <DependentUpon>logout.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\logout.aspx.designer.cs">
+    <Compile Include="adminarea\logout.aspx.designer.cs">
       <DependentUpon>logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -276,6 +310,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

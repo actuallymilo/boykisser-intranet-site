@@ -7,20 +7,31 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Boykisser_Website {
-    
-    
-    public partial class Site {
-        
+namespace Boykisser_Website
+{
+
+
+    public partial class Site
+    {
+
         /// <summary>
-        /// AdminPlaceholder control.
+        /// SiteAdminPlaceholder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder AdminPlaceholder;
-        
+        protected global::System.Web.UI.WebControls.PlaceHolder SiteAdminPlaceholder;
+
+        /// <summary>
+        /// AdminArea control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder AdminArea;
+
         /// <summary>
         /// LogoutPlaceholder control.
         /// </summary>
@@ -29,7 +40,7 @@ namespace Boykisser_Website {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.PlaceHolder LogoutPlaceholder;
-        
+
         /// <summary>
         /// banner control.
         /// </summary>
@@ -38,7 +49,7 @@ namespace Boykisser_Website {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl banner;
-        
+
         /// <summary>
         /// bannerContent control.
         /// </summary>
@@ -47,7 +58,7 @@ namespace Boykisser_Website {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl bannerContent;
-        
+
         /// <summary>
         /// Content control.
         /// </summary>

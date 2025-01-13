@@ -3,7 +3,7 @@
     <div class="content-wrapper">
         <div class="cell">
             <h2>Sign in with Active Directory</h2>
-            <h3>Boykisser Website Administration</h3>
+            <h3>Boykisser IT Admin Area</h3>
             <asp:Label ID="lblMessage" runat="server" CssClass="error-message" />
                 <label for="txtUsername">Username:</label>
                 <asp:TextBox ID="txtUsername" runat="server" CssClass="login-input" />

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Boykisser Website Admin" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Boykisser_Website.admin._default" %>
+﻿<%@ Page Title="Boykisser Website Admin" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="siteadmin.aspx.cs" Inherits="Boykisser_Website.admin._default" %>
 <asp:Content ContentPlaceHolderID="Content" runat="server">
     <div class="content-wrapper">
         <h1>Site Administration</h1>
