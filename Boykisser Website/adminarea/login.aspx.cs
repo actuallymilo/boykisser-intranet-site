@@ -31,7 +31,22 @@ namespace Boykisser_Website
                         string returnUrl = Request.QueryString["ReturnUrl"];
                         if (!string.IsNullOrEmpty(returnUrl))
                         {
-                            Response.Redirect(returnUrl);
+                            Uri returnUri;
+                            if (Uri.TryCreate(returnUrl, UriKind.RelativeOrAbsolute, out returnUri))
+                            {
+                                if (!returnUri.IsAbsoluteUri || returnUri.Host == Request.Url.Host)
+                                {
+                                    Response.Redirect(returnUrl);
+                                }
+                                else
+                                {
+                                    lblMessage.Text = "Invalid return URL.";
+                                }
+                            }
+                            else
+                            {
+                                lblMessage.Text = "Invalid return URL.";
+                            }
                         }
                         else
                         {
