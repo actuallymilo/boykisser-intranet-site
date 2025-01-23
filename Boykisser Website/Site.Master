@@ -1,7 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Boykisser_Website.Site" %>
-
 <!DOCTYPE html>
-
 <html lang="en">
 <head runat="server">
     <meta charset="UTF-8">
@@ -18,7 +16,7 @@
         </div>
         <button class="menu-toggle" aria-label="Toggle navigation">
             &#9776;
-   
+          
         </button>
         <nav class="navbar">
             <a href="/">Site Home</a>
@@ -30,8 +28,8 @@
             <a href="/email.aspx">Email Setup</a>
             <a href="/im.aspx">IM Setup</a>
             <a href="/sip.aspx">SIP Setup</a>
+            <a href="/cellular.aspx">Cellular</a>
             <a href="mailto:support@boykisser.com">Contact Support</a>
-            <asp:Placeholder ID="SiteAdminPlaceholder" runat="server"></asp:Placeholder>
             <asp:PlaceHolder ID="AdminArea" runat="server"></asp:PlaceHolder>
             <asp:PlaceHolder ID="LogoutPlaceholder" runat="server"></asp:PlaceHolder>
         </nav>
@@ -39,7 +37,6 @@
     <div id="banner" runat="server" class="banner hidden">
         <span id="bannerContent" runat="server"></span>
     </div>
-
     <form runat="server">
         <div>
             <asp:ContentPlaceHolder ID="Content" runat="server">

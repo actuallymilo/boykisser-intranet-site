@@ -15,15 +15,6 @@ namespace Boykisser_Website
     {
 
         /// <summary>
-        /// SiteAdminPlaceholder control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder SiteAdminPlaceholder;
-
-        /// <summary>
         /// AdminArea control.
         /// </summary>
         /// <remarks>
