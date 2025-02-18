@@ -15,6 +15,10 @@ define('OFFLINE_IPINFO_DB_FILE', 'country_asn.mmdb');
 require_once 'getIP_util.php';
 
 function getLocalOrPrivateIpInfo($ip){
+
+    if ($ip === '172.16.223.218') {
+        return 'Boykisser Cellular';
+    }
     // ::1/128 is the only localhost ipv6 address. there are no others, no need to strpos this
     if ('::1' === $ip) {
         return 'localhost IPv6 access';

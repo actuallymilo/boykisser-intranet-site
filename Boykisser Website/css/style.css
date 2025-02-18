@@ -83,6 +83,13 @@ body.dark-mode {
     color: white;
 }
 
+.site-footer a {
+    margin-left: 15px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
 body.dark-mode .site-footer {
     background-color: #333333;
 }

@@ -30,8 +30,6 @@
             <a href="/sip.aspx">SIP Setup</a>
             <a href="/cellular.aspx">Cellular</a>
             <a href="mailto:support@boykisser.com">Contact Support</a>
-            <asp:PlaceHolder ID="AdminArea" runat="server"></asp:PlaceHolder>
-            <asp:PlaceHolder ID="LogoutPlaceholder" runat="server"></asp:PlaceHolder>
         </nav>
     </header>
     <div id="banner" runat="server" class="banner hidden">
@@ -47,6 +45,8 @@
     <footer class="site-footer">
         <small>Copyright 2023-2025 Boykisser Corporation. All Rights Reserved</small>
         <button id="dark-mode-toggle">Toggle Dark Mode</button>
+        <asp:PlaceHolder ID="AdminArea" runat="server"></asp:PlaceHolder>
+        <asp:PlaceHolder ID="LogoutPlaceholder" runat="server"></asp:PlaceHolder>
     </footer>
 </body>
 </html>
