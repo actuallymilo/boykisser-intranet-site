@@ -10,6 +10,7 @@
                     <li><a href="domainjoin.aspx">Join a Workstation to Active Directory</a></li>
                     <li><a href="grouppolicy.aspx">Information about Group Policy</a></li>
                     <li><a href="fileshares.aspx">Information about File Shares on the Network</a></li>
+                    <li><a href="cellulartechdetails.aspx">Cellular Network Technical Information</a></li>
                 </ul>
             </div>
         </div>
