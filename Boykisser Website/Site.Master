@@ -1,4 +1,5 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Boykisser_Website.Site" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Boykisser_Website.Site" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head runat="server">
@@ -16,7 +17,7 @@
         </div>
         <button class="menu-toggle" aria-label="Toggle navigation">
             &#9776;
-          
+               
         </button>
         <nav class="navbar">
             <a href="/">Site Home</a>
@@ -27,9 +28,10 @@
             <a href="/techcontacts.aspx">Technical Contacts</a>
             <a href="/email.aspx">Email Setup</a>
             <a href="/im.aspx">IM Setup</a>
-            <a href="/sip.aspx">SIP Setup</a>
             <a href="/cellular.aspx">Cellular</a>
-            <a href="mailto:support@boykisser.com">Contact Support</a>
+            <a href="https://status.boykisser.com">System Status</a>
+            <asp:PlaceHolder ID="AdminArea" runat="server"></asp:PlaceHolder>
+            <asp:PlaceHolder ID="LogoutPlaceholder" runat="server"></asp:PlaceHolder>
         </nav>
     </header>
     <div id="banner" runat="server" class="banner hidden">
@@ -43,10 +45,8 @@
     </form>
     <script src="/js/setdarkmode.js"></script>
     <footer class="site-footer">
-        <small>Copyright 2023-2025 Boykisser Corporation. All Rights Reserved</small>
+        <small>Copyright 2023-2026 Boykisser Corporation. All Rights Reserved</small>
         <button id="dark-mode-toggle">Toggle Dark Mode</button>
-        <asp:PlaceHolder ID="AdminArea" runat="server"></asp:PlaceHolder>
-        <asp:PlaceHolder ID="LogoutPlaceholder" runat="server"></asp:PlaceHolder>
     </footer>
 </body>
 </html>
