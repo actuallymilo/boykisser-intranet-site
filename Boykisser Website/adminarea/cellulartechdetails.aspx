@@ -7,10 +7,10 @@
             <h2>BCCH Network Information</h2>
             <div class="cell">
                 <ul>
-                    <li><strong>Network Band:</strong> CLR 850</li>
-                    <li><strong>Cell ARFCN:</strong> 250</li>
-                    <li><strong>UL Frequency:</strong> 848.6 MHz</li>
-                    <li><strong>DL Frequency:</strong> 893.6 MHz</li>
+                    <li><strong>Network Band:</strong> PCS</li>
+                    <li><strong>Cell ARFCN:</strong> 515</li>
+                    <li><strong>UL Frequency:</strong> 1850.8 MHz</li>
+                    <li><strong>DL Frequency:</strong> 1930.8 MHz</li>
                     <li><strong>PLMN:</strong> 310 170</li>
                     <li><strong>LAC:</strong> 0x6ab1 (27313)</li>
                     <li><strong>CID:</strong> 121</li>
