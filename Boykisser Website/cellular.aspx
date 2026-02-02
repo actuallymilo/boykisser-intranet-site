@@ -32,7 +32,7 @@
                 <li>Some phones may show AT&T instead of Cingular. This is because of the way SIM cards are programmed. There is nothing that can be done to change this as of yet.</li>
                 <li>You will be provided a SIM card or eSIM used specifically for accessing the Cingular Wireless network.</li>
                 <li>When leaving the coverage area, you will have no service</li>
-                <li>Your phone must support the 850 MHz GSM band.</li>
+                <li>Your phone must support the 1900 MHz GSM band.</li>
             </ul>
         </div>
     </div>
